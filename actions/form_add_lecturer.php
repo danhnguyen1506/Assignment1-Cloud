@@ -11,11 +11,11 @@ if( $_POST['id'] != '' &&
 	$_POST['age'] != '') {
 	
 	// Add this lecturee to the CSV file
-	// 	(1) Open the file for writing
+	// Open the file for writing
 	$f = fopen('../data/lecturers.csv','a');
-	// 	(2) Write the new lecture's infomation to the file
+	// Write the new lecture's infomation to the file
 	fwrite($f,"\n{$_POST['id']},{$_POST['firstname']},{$_POST['lastname']},{$_POST['gender']},{$_POST['age']}");
-	// 	(3) Close the file
+	// Close the file
 	fclose($f);
 	
 	$_SESSION['message'] = array(

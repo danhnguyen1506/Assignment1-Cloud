@@ -13,12 +13,9 @@
 		<tbody>
 			<?php 
 			// Read all lines of the CSV file into an array
-			// The "file" function in PHP returns an array of all the lines in the file listed
 			$lines = file('data/lecturers.csv',FILE_IGNORE_NEW_LINES);
-			
 			// Counter variable for line number
 			$i = 0;
-			
 			//Iterate over the array of lines
 			foreach($lines as $line) {
 				$parts = explode(',',$line);
@@ -34,9 +31,8 @@
 				echo 	"<td>$Gender</td>";
 				echo 	"<td>$Age</td>";
 				echo 	"<td><a class=\"btn btn-warning\" href=\"./?p=form_edit_lecturer&lecturer=$i\"><i class=\"icon-edit icon-white\"></i></a> <a class=\"btn btn-danger\" href=\"actions/delete_lecturer.php?linenum=$i\"><i class=\"icon-trash icon-white\"></i></a></td>";
-				echo '</tr>';
-				
-				$i++; // increment line number
+				echo '</tr>';			
+				$i++;
 			}
 			?>
 		</tbody>

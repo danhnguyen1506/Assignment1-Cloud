@@ -18,9 +18,3 @@ $_SESSION['message'] =  array(
 
 header('Location:../?p=list_lecturers');
 ?>
-
-
-<!-- To synch workspace with cloud
-Commit changes - changes files used to track repository on local machine to check for new files
-Push changes - will make changes on githu/cloud respository
-In order to do this, first must type a git add command-->

@@ -6,10 +6,6 @@ $lecturer = explode(',',$lines[$_GET['lecturer']]);
 ?>
 
 <h2>Edit Lecturer</h2>
-<!-- There are two ways to sumbit data from forms to the web server:
-	- Get: use when submitting somthing that won't change the server state
-	- Post: use when submitting something that will change something on the
-server (such as a data file) -->
 <form class="form-horizontal" action="actions/edit_lecturer.php" method="post">
 	<input type="hidden" name="linenum" value="<?php echo $_GET['lecturer'] ?>" />
 	<div class="control-group">

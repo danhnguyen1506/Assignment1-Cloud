@@ -1,0 +1,28 @@
+runtime: php55
+api_version: 1
+
+handlers:
+# Serve images as static resources.
+- url: /(.+\.(gif|png|jpg))$
+  static_files: \1
+  upload: .+\.(gif|png|jpg)$
+  application_readable: true
+
+- url: /(.+\.php)$
+  script: \1
+
+- url: /
+  script: index.php
+
+- url: /index.php
+  script: index.php
+
+- url: /actions/form_add_lecturer.php
+  script: /actions/form_add_lecturer.php
+
+- url: /actions/edit_lecturer.php
+  script: /actions/edit_lecturer.php
+
+- url: /actions/delete_lecturer.php
+  script: /actions/delete_lecturer.php
+
