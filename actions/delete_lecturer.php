@@ -12,7 +12,7 @@ fwrite($f,$data_string);
 fclose($f);
 
 $_SESSION['message'] =  array(
-	'text' => 'The band has been deleted. It is gone... forever. Congratulations, you monster. Why does a scourge like youself exist upon this planet? You know what... no... I dont wanna know!',
+	'text' => 'Deleted successful',
 	'type' => 'error'
 );
 

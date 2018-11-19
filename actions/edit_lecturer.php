@@ -4,8 +4,7 @@ session_start();
 $lines = file('../data/lecturers.csv', FILE_IGNORE_NEW_LINES);
 
 // Replace line with new values
-$lines[$_POST['linenum']] = "{$_POST['id']},{$_POST['firstname']},{$_POST['lastname']},
-	{$_POST['gender']},{$_POST['age']}";
+$lines[$_POST['linenum']] = "{$_POST['id']},{$_POST['firstname']},{$_POST['lastname']},{$_POST['gender']},{$_POST['age']}";
 
 // Create the string to write to the file
 $data_string = implode("\n",$lines);
@@ -16,7 +15,7 @@ fwrite($f,$data_string);
 fclose($f);
 
 $_SESSION['message'] = array(
-	'text' => 'The band has been edited.',
+	'text' => 'Edited successful.',
 	'type' => 'info'
 );
 

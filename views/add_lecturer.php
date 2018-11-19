@@ -1,4 +1,4 @@
-<h2>Add a Band</h2>
+<h2>Add a lecturer</h2>
 <!-- There are two ways to sumbit data from forms to the web server:
 	- Get: use when submitting somthing that won't change the server state
 	- Post: use when submitting something that will change something on the 

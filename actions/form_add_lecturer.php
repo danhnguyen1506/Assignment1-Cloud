@@ -10,20 +10,20 @@ if( $_POST['id'] != '' &&
 	$_POST['gender'] != '' &&
 	$_POST['age'] != '') {
 	
-	// Add this band to the CSV file
+	// Add this lecturee to the CSV file
 	// 	(1) Open the file for writing
 	$f = fopen('../data/lecturers.csv','a');
-	// 	(2) Write the new band's info to the file
+	// 	(2) Write the new lecture's infomation to the file
 	fwrite($f,"\n{$_POST['id']},{$_POST['firstname']},{$_POST['lastname']},{$_POST['gender']},{$_POST['age']}");
 	// 	(3) Close the file
 	fclose($f);
 	
 	$_SESSION['message'] = array(
-			'text' => 'Your band has been added.',
+			'text' => 'Added successful.',
 			'type' => 'success'
 	);
 	
-	//Redirect to list of bands
+	//Redirect to list of lecturers
 	header('Location:../?p=list_lecturers');
 } else {
 	// Store submitted data into session data

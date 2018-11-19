@@ -33,7 +33,7 @@
 				echo 	"<td>$LastName</td>";
 				echo 	"<td>$Gender</td>";
 				echo 	"<td>$Age</td>";
-				echo 	"<td><a class=\"btn btn-warning\" href=\"./?p=form_edit_lecturer&band=$i\"><i class=\"icon-edit icon-white\"></i></a> <a class=\"btn btn-danger\" href=\"actions/delete_lecturer.php?linenum=$i\"><i class=\"icon-trash icon-white\"></i></a></td>";
+				echo 	"<td><a class=\"btn btn-warning\" href=\"./?p=form_edit_lecturer&lecturer=$i\"><i class=\"icon-edit icon-white\"></i></a> <a class=\"btn btn-danger\" href=\"actions/delete_lecturer.php?linenum=$i\"><i class=\"icon-trash icon-white\"></i></a></td>";
 				echo '</tr>';
 				
 				$i++; // increment line number
