@@ -17,6 +17,9 @@ handlers:
 - url: /index.php
   script: index.php
 
+- url: /bootstrap
+  static_dir: bootstrap
+
 - url: /actions/form_add_lecturer.php
   script: /actions/form_add_lecturer.php
 

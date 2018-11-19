@@ -13,7 +13,7 @@
 		<tbody>
 			<?php 
 			// Read all lines of the CSV file into an array
-			$lines = file('data/lecturers.csv',FILE_IGNORE_NEW_LINES);
+			$lines = file('gs://s3635085-a1-cloudcomputing/lecturers.csv',FILE_IGNORE_NEW_LINES);
 			// Counter variable for line number
 			$i = 0;
 			//Iterate over the array of lines

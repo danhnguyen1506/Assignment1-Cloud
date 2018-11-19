@@ -1,5 +1,5 @@
 <?php 
-$lines = file('data/lecturers.csv',FILE_IGNORE_NEW_LINES);
+$lines = file('gs://s3635085-a1-cloudcomputing/lecturers.csv',FILE_IGNORE_NEW_LINES);
 
 // Get the lecturer association with the 'lecturer' parameter in the query string
 $lecturer = explode(',',$lines[$_GET['lecturer']]);
